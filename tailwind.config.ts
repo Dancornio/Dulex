@@ -7,19 +7,18 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        'brand-blue': {
-          light: '#E0F7FA', // Azul bem claro para fundos
-          DEFAULT: '#4DD0E1', // Azul principal
-          dark: '#00ACC1',   // Azul para hover/foco
-        },
-        'brand-gray': {
-          light: '#F5F5F5',
-          DEFAULT: '#BDBDBD',
-          dark: '#616161',
-        },
+    colors: {
+      'brand-blue': {
+        light: '#E0F7FA',
+        DEFAULT: '#4DD0E1',
+        dark: '#00ACC1',
       },
+      'brand-gray': {
+        light: '#F5F5F5',
+        DEFAULT: '#BDBDBD',
+        dark: '#616161',
+      },
+      ...require('tailwindcss/colors'),
     },
   },
   plugins: [],
