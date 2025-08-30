@@ -1,3 +1,4 @@
+// tailwind.config.ts
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -7,18 +8,15 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      'brand-blue': {
-        light: '#E0F7FA',
-        DEFAULT: '#4DD0E1',
-        dark: '#00ACC1',
+    extend: {
+      colors: {
+        'brand-blue-light': '#E0F7FA',
+        'brand-blue': '#4DD0E1',
+        'brand-blue-dark': '#00ACC1',
+        'brand-gray-light': '#F5F5F5',
+        'brand-gray': '#BDBDBD',
+        'brand-gray-dark': '#616161',
       },
-      'brand-gray': {
-        light: '#F5F5F5',
-        DEFAULT: '#BDBDBD',
-        dark: '#616161',
-      },
-      ...require('tailwindcss/colors'),
     },
   },
   plugins: [],

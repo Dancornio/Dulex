@@ -1,8 +1,12 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss";
 
-body {
-  background-color: var(--brand-gray-light);
-  color: var(--brand-gray-dark);
+@theme {
+  --color-brand-blue-light: #E0F7FA;
+  --color-brand-blue: #4DD0E1;
+  --color-brand-blue-dark: #00ACC1;
+  --color-brand-gray-light: #F5F5F5;
+  --color-brand-gray: #BDBDBD;
+  --color-brand-gray-dark: #616161;
 }
+
+/* Estilos globais opcionais podem ser adicionados aqui se necessário. */
